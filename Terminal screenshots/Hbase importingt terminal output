@@ -1,0 +1,317 @@
+hduser@muhammad-VM:/usr/local/hbase$ bin/hbase org.apache.hadoop.hbase.mapreduce.ImportTsv -Dimporttsv.columns=cf:ALink,cf:SName,cf:SLink,cf:Lyric,cf:language,HBASE_ROW_KEY -Dmapreduce.input.fileinputformat.input.charset=UTF-8 LyricsTest hdfs:///CA1/lyrics-dataForHbase.csv
+/usr/local/hadoop/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/local/hadoop/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_OPTS: invalid variable name
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/local/hadoop-3.2.4/share/hadoop/common/lib/slf4j-reload4j-1.7.35.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/local/hbase-2.4.17/lib/client-facing-thirdparty/slf4j-reload4j-1.7.33.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]
+2023-11-05 19:06:00,730 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3cd3e762] zookeeper.ZooKeeper: Client environment:zookeeper.version=3.5.7-f0fdd52973d373ffd9c86b81d99842dc2c7f660e, built on 02/10/2020 11:30 GMT
+2023-11-05 19:06:00,730 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3cd3e762] zookeeper.ZooKeeper: Client environment:host.name=muhammad-VM
+2023-11-05 19:06:00,730 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3cd3e762] zookeeper.ZooKeeper: Client environment:java.version=1.8.0_382
+2023-11-05 19:06:00,730 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3cd3e762] zookeeper.ZooKeeper: Client environment:java.vendor=Private Build
+2023-11-05 19:06:00,730 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3cd3e762] zookeeper.ZooKeeper: Client environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre
+2023-11-05 19:06:00,731 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3cd3e762] zookeeper.ZooKeeper: ar:/usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-server-router-3.2.4.jar:/usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-common-3.2.4.jar:/usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-client-3.2.4.jar:/usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-3.2.4.jar:/usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-server-web-proxy-3.2.4.jar:/usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-3.2.4.jar:/usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-3.2.4.jar:/usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-server-common-3.2.4.jar:/usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-server-nodemanager-3.2.4.jar:/usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-services-api-3.2.4.jar:/usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-server-timeline-pluginstorage-3.2.4.jar:/usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-services-core-3.2.4.jar:/usr/local/hbase/bin/../lib/client-facing-thirdparty/slf4j-reload4j-1.7.33.jar
+2023-11-05 19:06:00,731 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3cd3e762] zookeeper.ZooKeeper: Client environment:java.library.path=/usr/local/hadoop/lib/native
+2023-11-05 19:06:00,731 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3cd3e762] zookeeper.ZooKeeper: Client environment:java.io.tmpdir=/tmp
+2023-11-05 19:06:00,731 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3cd3e762] zookeeper.ZooKeeper: Client environment:java.compiler=<NA>
+2023-11-05 19:06:00,731 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3cd3e762] zookeeper.ZooKeeper: Client environment:os.name=Linux
+2023-11-05 19:06:00,731 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3cd3e762] zookeeper.ZooKeeper: Client environment:os.arch=amd64
+2023-11-05 19:06:00,731 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3cd3e762] zookeeper.ZooKeeper: Client environment:os.version=6.2.0-31-generic
+2023-11-05 19:06:00,731 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3cd3e762] zookeeper.ZooKeeper: Client environment:user.name=hduser
+2023-11-05 19:06:00,731 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3cd3e762] zookeeper.ZooKeeper: Client environment:user.home=/home/hduser
+2023-11-05 19:06:00,731 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3cd3e762] zookeeper.ZooKeeper: Client environment:user.dir=/usr/local/hbase-2.4.17
+2023-11-05 19:06:00,731 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3cd3e762] zookeeper.ZooKeeper: Client environment:os.memory.free=40MB
+2023-11-05 19:06:00,731 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3cd3e762] zookeeper.ZooKeeper: Client environment:os.memory.max=945MB
+2023-11-05 19:06:00,731 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3cd3e762] zookeeper.ZooKeeper: Client environment:os.memory.total=59MB
+2023-11-05 19:06:00,733 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3cd3e762] zookeeper.ZooKeeper: Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=90000 watcher=org.apache.hadoop.hbase.zookeeper.ReadOnlyZKClient$$Lambda$14/1143436773@11871764
+2023-11-05 19:06:00,736 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3cd3e762] common.X509Util: Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation
+2023-11-05 19:06:00,761 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3cd3e762] zookeeper.ClientCnxnSocket: jute.maxbuffer value is 4194304 Bytes
+2023-11-05 19:06:00,767 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3cd3e762] zookeeper.ClientCnxn: zookeeper.request.timeout value is 0. feature enabled=
+2023-11-05 19:06:00,772 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3cd3e762-SendThread(127.0.0.1:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2023-11-05 19:06:00,775 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3cd3e762-SendThread(127.0.0.1:2181)] zookeeper.ClientCnxn: Socket connection established, initiating session, client: /127.0.0.1:32854, server: localhost/127.0.0.1:2181
+2023-11-05 19:06:00,786 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3cd3e762-SendThread(127.0.0.1:2181)] zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x10000222c0f0004, negotiated timeout = 40000
+2023-11-05 19:06:01,828 INFO  [main] Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2023-11-05 19:06:01,829 INFO  [main] jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2023-11-05 19:06:01,867 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x1bc53649] zookeeper.ZooKeeper: Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=90000 watcher=org.apache.hadoop.hbase.zookeeper.ReadOnlyZKClient$$Lambda$14/1143436773@11871764
+2023-11-05 19:06:01,868 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x1bc53649] zookeeper.ClientCnxnSocket: jute.maxbuffer value is 4194304 Bytes
+2023-11-05 19:06:01,868 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x1bc53649] zookeeper.ClientCnxn: zookeeper.request.timeout value is 0. feature enabled=
+2023-11-05 19:06:01,871 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x1bc53649-SendThread(127.0.0.1:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2023-11-05 19:06:01,872 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x1bc53649-SendThread(127.0.0.1:2181)] zookeeper.ClientCnxn: Socket connection established, initiating session, client: /127.0.0.1:32864, server: localhost/127.0.0.1:2181
+2023-11-05 19:06:01,897 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x1bc53649-SendThread(127.0.0.1:2181)] zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x10000222c0f0005, negotiated timeout = 40000
+2023-11-05 19:06:01,929 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3cd3e762] zookeeper.ZooKeeper: Session: 0x10000222c0f0004 closed
+2023-11-05 19:06:01,929 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3cd3e762-EventThread] zookeeper.ClientCnxn: EventThread shut down for session: 0x10000222c0f0004
+2023-11-05 19:06:02,079 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x1bc53649] zookeeper.ZooKeeper: Session: 0x10000222c0f0005 closed
+2023-11-05 19:06:02,079 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x1bc53649-EventThread] zookeeper.ClientCnxn: EventThread shut down for session: 0x10000222c0f0005
+2023-11-05 19:06:02,136 INFO  [main] input.FileInputFormat: Total input files to process : 1
+2023-11-05 19:06:02,146 INFO  [main] mapreduce.JobSubmitter: number of splits:4
+2023-11-05 19:06:02,249 INFO  [main] mapreduce.JobSubmitter: Submitting tokens for job: job_local1232671110_0001
+2023-11-05 19:06:02,385 INFO  [main] mapred.LocalDistributedCacheManager: Creating symlink: /tmp/hadoop-hduser/mapred/local/1699211162287/libjars <- /usr/local/hbase-2.4.17/libjars/*
+2023-11-05 19:06:02,389 WARN  [main] fs.FileUtil: Command 'ln -s /tmp/hadoop-hduser/mapred/local/1699211162287/libjars /usr/local/hbase-2.4.17/libjars/*' failed 1 with: ln: failed to create symbolic link '/usr/local/hbase-2.4.17/libjars/*': No such file or directory
+
+2023-11-05 19:06:02,389 WARN  [main] mapred.LocalDistributedCacheManager: Failed to create symlink: /tmp/hadoop-hduser/mapred/local/1699211162287/libjars <- /usr/local/hbase-2.4.17/libjars/*
+2023-11-05 19:06:02,389 INFO  [main] mapred.LocalDistributedCacheManager: Localized file:/tmp/hadoop-hduser/mapred/staging/hduser1232671110/.staging/job_local1232671110_0001/libjars as file:/tmp/hadoop-hduser/mapred/local/1699211162287/libjars
+2023-11-05 19:06:02,444 INFO  [main] mapreduce.Job: The url to track the job: http://localhost:8080/
+2023-11-05 19:06:02,445 INFO  [main] mapreduce.Job: Running job: job_local1232671110_0001
+2023-11-05 19:06:02,449 INFO  [Thread-9] mapred.LocalJobRunner: OutputCommitter set in config null
+2023-11-05 19:06:02,478 INFO  [Thread-9] mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.hbase.mapreduce.TableOutputCommitter
+2023-11-05 19:06:02,498 INFO  [Thread-9] mapred.LocalJobRunner: Waiting for map tasks
+2023-11-05 19:06:02,499 INFO  [LocalJobRunner Map Task Executor #0] mapred.LocalJobRunner: Starting task: attempt_local1232671110_0001_m_000000_0
+2023-11-05 19:06:02,551 INFO  [LocalJobRunner Map Task Executor #0] mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2023-11-05 19:06:02,595 INFO  [LocalJobRunner Map Task Executor #0] mapred.MapTask: Processing split: hdfs://localhost:9000/CA1/lyrics-dataForHbase.csv/part-00000-0dfcdbd0-5442-4145-8d98-4949e567b47d-c000.csv:0+134217728
+2023-11-05 19:06:02,604 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x2c172e2e] zookeeper.ZooKeeper: Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=90000 watcher=org.apache.hadoop.hbase.zookeeper.ReadOnlyZKClient$$Lambda$14/1143436773@11871764
+2023-11-05 19:06:02,604 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x2c172e2e] zookeeper.ClientCnxnSocket: jute.maxbuffer value is 4194304 Bytes
+2023-11-05 19:06:02,604 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x2c172e2e] zookeeper.ClientCnxn: zookeeper.request.timeout value is 0. feature enabled=
+2023-11-05 19:06:02,606 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x2c172e2e-SendThread(127.0.0.1:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2023-11-05 19:06:02,607 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x2c172e2e-SendThread(127.0.0.1:2181)] zookeeper.ClientCnxn: Socket connection established, initiating session, client: /127.0.0.1:32868, server: localhost/127.0.0.1:2181
+2023-11-05 19:06:02,618 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x2c172e2e-SendThread(127.0.0.1:2181)] zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x10000222c0f0006, negotiated timeout = 40000
+2023-11-05 19:06:02,623 INFO  [LocalJobRunner Map Task Executor #0] mapreduce.TableOutputFormat: Created table instance for LyricsTest
+2023-11-05 19:06:02,660 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x081bebc8] zookeeper.ZooKeeper: Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=90000 watcher=org.apache.hadoop.hbase.zookeeper.ReadOnlyZKClient$$Lambda$14/1143436773@11871764
+2023-11-05 19:06:02,660 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x081bebc8] zookeeper.ClientCnxnSocket: jute.maxbuffer value is 4194304 Bytes
+2023-11-05 19:06:02,660 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x081bebc8] zookeeper.ClientCnxn: zookeeper.request.timeout value is 0. feature enabled=
+2023-11-05 19:06:02,661 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x081bebc8-SendThread(127.0.0.1:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2023-11-05 19:06:02,662 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x081bebc8-SendThread(127.0.0.1:2181)] zookeeper.ClientCnxn: Socket connection established, initiating session, client: /127.0.0.1:32884, server: localhost/127.0.0.1:2181
+2023-11-05 19:06:02,664 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x081bebc8-SendThread(127.0.0.1:2181)] zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x10000222c0f0007, negotiated timeout = 40000
+2023-11-05 19:06:02,839 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x081bebc8] zookeeper.ZooKeeper: Session: 0x10000222c0f0007 closed
+2023-11-05 19:06:02,839 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x081bebc8-EventThread] zookeeper.ClientCnxn: EventThread shut down for session: 0x10000222c0f0007
+2023-11-05 19:06:03,447 INFO  [main] mapreduce.Job: Job job_local1232671110_0001 running in uber mode : false
+2023-11-05 19:06:03,450 INFO  [main] mapreduce.Job:  map 0% reduce 0%
+2023-11-05 19:06:06,316 INFO  [LocalJobRunner Map Task Executor #0] mapred.LocalJobRunner: 
+2023-11-05 19:06:06,325 INFO  [LocalJobRunner Map Task Executor #0] mapred.Task: Task:attempt_local1232671110_0001_m_000000_0 is done. And is in the process of committing
+2023-11-05 19:06:06,383 INFO  [LocalJobRunner Map Task Executor #0] mapred.LocalJobRunner: map
+2023-11-05 19:06:06,384 INFO  [LocalJobRunner Map Task Executor #0] mapred.Task: Task 'attempt_local1232671110_0001_m_000000_0' done.
+2023-11-05 19:06:06,393 INFO  [LocalJobRunner Map Task Executor #0] mapred.Task: Final Counters for attempt_local1232671110_0001_m_000000_0: Counters: 24
+	File System Counters
+		FILE: Number of bytes read=432727
+		FILE: Number of bytes written=1014228
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=134221824
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=3
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=118182
+		Map output records=118182
+		Input split bytes=171
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=112
+		CPU time spent (ms)=3560
+		Physical memory (bytes) snapshot=246398976
+		Virtual memory (bytes) snapshot=2796158976
+		Total committed heap usage (bytes)=62849024
+	ImportTsv
+		Bad Lines=0
+	File Input Format Counters 
+		Bytes Read=134221824
+	File Output Format Counters 
+		Bytes Written=0
+2023-11-05 19:06:06,393 INFO  [LocalJobRunner Map Task Executor #0] mapred.LocalJobRunner: Finishing task: attempt_local1232671110_0001_m_000000_0
+2023-11-05 19:06:06,393 INFO  [LocalJobRunner Map Task Executor #0] mapred.LocalJobRunner: Starting task: attempt_local1232671110_0001_m_000001_0
+2023-11-05 19:06:06,408 INFO  [LocalJobRunner Map Task Executor #0] mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2023-11-05 19:06:06,417 INFO  [LocalJobRunner Map Task Executor #0] mapred.MapTask: Processing split: hdfs://localhost:9000/CA1/lyrics-dataForHbase.csv/part-00000-0dfcdbd0-5442-4145-8d98-4949e567b47d-c000.csv:134217728+134217728
+2023-11-05 19:06:06,436 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x2c172e2e] zookeeper.ZooKeeper: Session: 0x10000222c0f0006 closed
+2023-11-05 19:06:06,444 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x2c172e2e-EventThread] zookeeper.ClientCnxn: EventThread shut down for session: 0x10000222c0f0006
+2023-11-05 19:06:06,445 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x63cba0a7] zookeeper.ZooKeeper: Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=90000 watcher=org.apache.hadoop.hbase.zookeeper.ReadOnlyZKClient$$Lambda$14/1143436773@11871764
+2023-11-05 19:06:06,446 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x63cba0a7] zookeeper.ClientCnxnSocket: jute.maxbuffer value is 4194304 Bytes
+2023-11-05 19:06:06,459 INFO  [main] mapreduce.Job:  map 100% reduce 0%
+2023-11-05 19:06:06,459 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x63cba0a7] zookeeper.ClientCnxn: zookeeper.request.timeout value is 0. feature enabled=
+2023-11-05 19:06:06,471 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x63cba0a7-SendThread(127.0.0.1:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2023-11-05 19:06:06,472 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x63cba0a7-SendThread(127.0.0.1:2181)] zookeeper.ClientCnxn: Socket connection established, initiating session, client: /127.0.0.1:32888, server: localhost/127.0.0.1:2181
+2023-11-05 19:06:06,476 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x63cba0a7-SendThread(127.0.0.1:2181)] zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x10000222c0f0008, negotiated timeout = 40000
+2023-11-05 19:06:06,498 INFO  [LocalJobRunner Map Task Executor #0] mapreduce.TableOutputFormat: Created table instance for LyricsTest
+2023-11-05 19:06:06,519 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x6721d209] zookeeper.ZooKeeper: Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=90000 watcher=org.apache.hadoop.hbase.zookeeper.ReadOnlyZKClient$$Lambda$14/1143436773@11871764
+2023-11-05 19:06:06,519 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x6721d209] zookeeper.ClientCnxnSocket: jute.maxbuffer value is 4194304 Bytes
+2023-11-05 19:06:06,524 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x6721d209] zookeeper.ClientCnxn: zookeeper.request.timeout value is 0. feature enabled=
+2023-11-05 19:06:06,533 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x6721d209-SendThread(127.0.0.1:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2023-11-05 19:06:06,545 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x6721d209-SendThread(127.0.0.1:2181)] zookeeper.ClientCnxn: Socket connection established, initiating session, client: /127.0.0.1:32902, server: localhost/127.0.0.1:2181
+2023-11-05 19:06:06,550 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x6721d209-SendThread(127.0.0.1:2181)] zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x10000222c0f0009, negotiated timeout = 40000
+2023-11-05 19:06:06,709 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x6721d209] zookeeper.ZooKeeper: Session: 0x10000222c0f0009 closed
+2023-11-05 19:06:06,710 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x6721d209-EventThread] zookeeper.ClientCnxn: EventThread shut down for session: 0x10000222c0f0009
+2023-11-05 19:06:11,121 INFO  [LocalJobRunner Map Task Executor #0] mapred.LocalJobRunner: 
+2023-11-05 19:06:11,142 INFO  [LocalJobRunner Map Task Executor #0] mapred.Task: Task:attempt_local1232671110_0001_m_000001_0 is done. And is in the process of committing
+2023-11-05 19:06:11,182 INFO  [LocalJobRunner Map Task Executor #0] mapred.LocalJobRunner: map
+2023-11-05 19:06:11,182 INFO  [LocalJobRunner Map Task Executor #0] mapred.Task: Task 'attempt_local1232671110_0001_m_000001_0' done.
+2023-11-05 19:06:11,184 INFO  [LocalJobRunner Map Task Executor #0] mapred.Task: Final Counters for attempt_local1232671110_0001_m_000001_0: Counters: 24
+	File System Counters
+		FILE: Number of bytes read=433434
+		FILE: Number of bytes written=1014228
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=268443648
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=4
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=118388
+		Map output records=118388
+		Input split bytes=171
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=125
+		CPU time spent (ms)=2480
+		Physical memory (bytes) snapshot=265785344
+		Virtual memory (bytes) snapshot=2802450432
+		Total committed heap usage (bytes)=62849024
+	ImportTsv
+		Bad Lines=0
+	File Input Format Counters 
+		Bytes Read=134221824
+	File Output Format Counters 
+		Bytes Written=0
+2023-11-05 19:06:11,184 INFO  [LocalJobRunner Map Task Executor #0] mapred.LocalJobRunner: Finishing task: attempt_local1232671110_0001_m_000001_0
+2023-11-05 19:06:11,184 INFO  [LocalJobRunner Map Task Executor #0] mapred.LocalJobRunner: Starting task: attempt_local1232671110_0001_m_000002_0
+2023-11-05 19:06:11,196 INFO  [LocalJobRunner Map Task Executor #0] mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2023-11-05 19:06:11,212 INFO  [LocalJobRunner Map Task Executor #0] mapred.MapTask: Processing split: hdfs://localhost:9000/CA1/lyrics-dataForHbase.csv/part-00000-0dfcdbd0-5442-4145-8d98-4949e567b47d-c000.csv:268435456+134217728
+2023-11-05 19:06:11,220 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x4c324d77] zookeeper.ZooKeeper: Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=90000 watcher=org.apache.hadoop.hbase.zookeeper.ReadOnlyZKClient$$Lambda$14/1143436773@11871764
+2023-11-05 19:06:11,220 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x4c324d77] zookeeper.ClientCnxnSocket: jute.maxbuffer value is 4194304 Bytes
+2023-11-05 19:06:11,221 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x4c324d77] zookeeper.ClientCnxn: zookeeper.request.timeout value is 0. feature enabled=
+2023-11-05 19:06:11,225 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x4c324d77-SendThread(127.0.0.1:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2023-11-05 19:06:11,225 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x4c324d77-SendThread(127.0.0.1:2181)] zookeeper.ClientCnxn: Socket connection established, initiating session, client: /127.0.0.1:53132, server: localhost/127.0.0.1:2181
+2023-11-05 19:06:11,242 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x4c324d77-SendThread(127.0.0.1:2181)] zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x10000222c0f000a, negotiated timeout = 40000
+2023-11-05 19:06:11,247 INFO  [LocalJobRunner Map Task Executor #0] mapreduce.TableOutputFormat: Created table instance for LyricsTest
+2023-11-05 19:06:11,248 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x63cba0a7] zookeeper.ZooKeeper: Session: 0x10000222c0f0008 closed
+2023-11-05 19:06:11,249 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x63cba0a7-EventThread] zookeeper.ClientCnxn: EventThread shut down for session: 0x10000222c0f0008
+2023-11-05 19:06:11,280 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x38a9ad7e] zookeeper.ZooKeeper: Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=90000 watcher=org.apache.hadoop.hbase.zookeeper.ReadOnlyZKClient$$Lambda$14/1143436773@11871764
+2023-11-05 19:06:11,280 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x38a9ad7e] zookeeper.ClientCnxnSocket: jute.maxbuffer value is 4194304 Bytes
+2023-11-05 19:06:11,282 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x38a9ad7e] zookeeper.ClientCnxn: zookeeper.request.timeout value is 0. feature enabled=
+2023-11-05 19:06:11,297 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x38a9ad7e-SendThread(127.0.0.1:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2023-11-05 19:06:11,302 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x38a9ad7e-SendThread(127.0.0.1:2181)] zookeeper.ClientCnxn: Socket connection established, initiating session, client: /127.0.0.1:53136, server: localhost/127.0.0.1:2181
+2023-11-05 19:06:11,305 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x38a9ad7e-SendThread(127.0.0.1:2181)] zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x10000222c0f000b, negotiated timeout = 40000
+2023-11-05 19:06:11,448 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x38a9ad7e] zookeeper.ZooKeeper: Session: 0x10000222c0f000b closed
+2023-11-05 19:06:11,449 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x38a9ad7e-EventThread] zookeeper.ClientCnxn: EventThread shut down for session: 0x10000222c0f000b
+2023-11-05 19:06:14,589 INFO  [LocalJobRunner Map Task Executor #0] mapred.LocalJobRunner: 
+2023-11-05 19:06:14,598 INFO  [LocalJobRunner Map Task Executor #0] mapred.Task: Task:attempt_local1232671110_0001_m_000002_0 is done. And is in the process of committing
+2023-11-05 19:06:14,621 INFO  [LocalJobRunner Map Task Executor #0] mapred.LocalJobRunner: map
+2023-11-05 19:06:14,621 INFO  [LocalJobRunner Map Task Executor #0] mapred.Task: Task 'attempt_local1232671110_0001_m_000002_0' done.
+2023-11-05 19:06:14,622 INFO  [LocalJobRunner Map Task Executor #0] mapred.Task: Final Counters for attempt_local1232671110_0001_m_000002_0: Counters: 24
+	File System Counters
+		FILE: Number of bytes read=434141
+		FILE: Number of bytes written=1014228
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=402665472
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=5
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=108172
+		Map output records=108172
+		Input split bytes=171
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=96
+		CPU time spent (ms)=1740
+		Physical memory (bytes) snapshot=278368256
+		Virtual memory (bytes) snapshot=2803499008
+		Total committed heap usage (bytes)=62849024
+	ImportTsv
+		Bad Lines=0
+	File Input Format Counters 
+		Bytes Read=134221824
+	File Output Format Counters 
+		Bytes Written=0
+2023-11-05 19:06:14,622 INFO  [LocalJobRunner Map Task Executor #0] mapred.LocalJobRunner: Finishing task: attempt_local1232671110_0001_m_000002_0
+2023-11-05 19:06:14,622 INFO  [LocalJobRunner Map Task Executor #0] mapred.LocalJobRunner: Starting task: attempt_local1232671110_0001_m_000003_0
+2023-11-05 19:06:14,672 INFO  [LocalJobRunner Map Task Executor #0] mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2023-11-05 19:06:14,685 INFO  [LocalJobRunner Map Task Executor #0] mapred.MapTask: Processing split: hdfs://localhost:9000/CA1/lyrics-dataForHbase.csv/part-00000-0dfcdbd0-5442-4145-8d98-4949e567b47d-c000.csv:402653184+19699357
+2023-11-05 19:06:14,686 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3b314e5f] zookeeper.ZooKeeper: Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=90000 watcher=org.apache.hadoop.hbase.zookeeper.ReadOnlyZKClient$$Lambda$14/1143436773@11871764
+2023-11-05 19:06:14,687 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3b314e5f] zookeeper.ClientCnxnSocket: jute.maxbuffer value is 4194304 Bytes
+2023-11-05 19:06:14,687 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3b314e5f] zookeeper.ClientCnxn: zookeeper.request.timeout value is 0. feature enabled=
+2023-11-05 19:06:14,695 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3b314e5f-SendThread(127.0.0.1:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2023-11-05 19:06:14,696 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3b314e5f-SendThread(127.0.0.1:2181)] zookeeper.ClientCnxn: Socket connection established, initiating session, client: /127.0.0.1:53152, server: localhost/127.0.0.1:2181
+2023-11-05 19:06:14,706 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x4c324d77] zookeeper.ZooKeeper: Session: 0x10000222c0f000a closed
+2023-11-05 19:06:14,706 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x4c324d77-EventThread] zookeeper.ClientCnxn: EventThread shut down for session: 0x10000222c0f000a
+2023-11-05 19:06:14,707 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3b314e5f-SendThread(127.0.0.1:2181)] zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x10000222c0f000c, negotiated timeout = 40000
+2023-11-05 19:06:14,709 INFO  [LocalJobRunner Map Task Executor #0] mapreduce.TableOutputFormat: Created table instance for LyricsTest
+2023-11-05 19:06:14,775 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x48bda9cb] zookeeper.ZooKeeper: Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=90000 watcher=org.apache.hadoop.hbase.zookeeper.ReadOnlyZKClient$$Lambda$14/1143436773@11871764
+2023-11-05 19:06:14,776 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x48bda9cb] zookeeper.ClientCnxnSocket: jute.maxbuffer value is 4194304 Bytes
+2023-11-05 19:06:14,777 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x48bda9cb] zookeeper.ClientCnxn: zookeeper.request.timeout value is 0. feature enabled=
+2023-11-05 19:06:14,779 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x48bda9cb-SendThread(127.0.0.1:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2023-11-05 19:06:14,779 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x48bda9cb-SendThread(127.0.0.1:2181)] zookeeper.ClientCnxn: Socket connection established, initiating session, client: /127.0.0.1:53160, server: localhost/127.0.0.1:2181
+2023-11-05 19:06:14,782 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x48bda9cb-SendThread(127.0.0.1:2181)] zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x10000222c0f000d, negotiated timeout = 40000
+2023-11-05 19:06:14,941 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x48bda9cb] zookeeper.ZooKeeper: Session: 0x10000222c0f000d closed
+2023-11-05 19:06:14,941 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x48bda9cb-EventThread] zookeeper.ClientCnxn: EventThread shut down for session: 0x10000222c0f000d
+2023-11-05 19:06:15,388 INFO  [LocalJobRunner Map Task Executor #0] mapred.LocalJobRunner: 
+2023-11-05 19:06:15,470 INFO  [LocalJobRunner Map Task Executor #0] mapred.Task: Task:attempt_local1232671110_0001_m_000003_0 is done. And is in the process of committing
+2023-11-05 19:06:15,501 INFO  [main] mapreduce.Job:  map 75% reduce 0%
+2023-11-05 19:06:15,511 INFO  [LocalJobRunner Map Task Executor #0] mapred.LocalJobRunner: map
+2023-11-05 19:06:15,511 INFO  [LocalJobRunner Map Task Executor #0] mapred.Task: Task 'attempt_local1232671110_0001_m_000003_0' done.
+2023-11-05 19:06:15,511 INFO  [LocalJobRunner Map Task Executor #0] mapred.Task: Final Counters for attempt_local1232671110_0001_m_000003_0: Counters: 24
+	File System Counters
+		FILE: Number of bytes read=434336
+		FILE: Number of bytes written=1014228
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=422364829
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=6
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=20181
+		Map output records=20181
+		Input split bytes=171
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=26
+		CPU time spent (ms)=450
+		Physical memory (bytes) snapshot=282402816
+		Virtual memory (bytes) snapshot=2803499008
+		Total committed heap usage (bytes)=62849024
+	ImportTsv
+		Bad Lines=0
+	File Input Format Counters 
+		Bytes Read=19699357
+	File Output Format Counters 
+		Bytes Written=0
+2023-11-05 19:06:15,511 INFO  [LocalJobRunner Map Task Executor #0] mapred.LocalJobRunner: Finishing task: attempt_local1232671110_0001_m_000003_0
+2023-11-05 19:06:15,526 INFO  [Thread-9] mapred.LocalJobRunner: map task executor complete.
+2023-11-05 19:06:15,596 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3b314e5f] zookeeper.ZooKeeper: Session: 0x10000222c0f000c closed
+2023-11-05 19:06:15,596 INFO  [ReadOnlyZKClient-127.0.0.1:2181@0x3b314e5f-EventThread] zookeeper.ClientCnxn: EventThread shut down for session: 0x10000222c0f000c
+2023-11-05 19:06:16,508 INFO  [main] mapreduce.Job:  map 100% reduce 0%
+2023-11-05 19:06:16,508 INFO  [main] mapreduce.Job: Job job_local1232671110_0001 completed successfully
+2023-11-05 19:06:16,542 INFO  [main] mapreduce.Job: Counters: 24
+	File System Counters
+		FILE: Number of bytes read=1734638
+		FILE: Number of bytes written=4056912
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1227695773
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=18
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=364923
+		Map output records=364923
+		Input split bytes=684
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=359
+		CPU time spent (ms)=8230
+		Physical memory (bytes) snapshot=1072955392
+		Virtual memory (bytes) snapshot=11205607424
+		Total committed heap usage (bytes)=251396096
+	ImportTsv
+		Bad Lines=0
+	File Input Format Counters 
+		Bytes Read=422364829
+	File Output Format Counters 
+		Bytes Written=0
+hduser@muhammad-VM:/usr/local/hbase$ 
+
