@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Define your HDFS file paths
+input_path="/CA1/lyrics-dataTAB.csv"
+output_path="/CA1/lyrics-dataTAB_fixed.csv"
+
+# Check if the output file already exists and remove it to avoid errors
+hdfs dfs -test -e $output_path && hdfs dfs -rm $output_path
+
+# Use hdfs dfs -cat to output the file content, then sed to replace " with '
+# and then use hdfs dfs -put to store the result back into HDFS
+hdfs dfs -cat $input_path | sed "s/\"/'/g" | hdfs dfs -put - $output_path
+
